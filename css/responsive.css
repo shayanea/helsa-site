@@ -1,0 +1,77 @@
+@media(max-width: 990px) {
+  .banner .owl-carousel .col {
+    width: 100%;
+  }
+  .banner .owl-carousel .item {
+    flex-direction: column;
+  }
+  .banner .owl-carousel .owl-item .item {
+    width: 85%;
+  }
+  .banner .owl-carousel .col figure img {
+    height: 300px;
+  }
+  .banner .owl-carousel .col:last-child {
+    margin: 0;
+  }
+  .banner .owl-carousel .col .text {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .banner .owl-carousel .col .description {
+    font-size: 14px;
+    text-align: center;
+  }
+  main .blog {
+    margin-top: 0;
+  }
+  .blog .container .col-sm {
+    width: 100%;
+  }
+  .blog .container .row .item {
+    margin-left: 0;
+    margin-bottom: 25px;
+    min-height: auto;
+  }
+}
+
+@media(max-width: 375px) {
+  .loading-container span {
+    font-size: 4em;
+  }
+  .banner .owl-carousel .col .text {
+    font-size: 1.2em;
+  }
+  .banner .owl-carousel .col .description {
+    font-size: 12px;
+  }
+  .blog .container .items .item {
+    padding: 20px;
+  }
+  .blog .container .items h2 {
+    font-size: 1em;
+  }
+  .blog .container .items .published-date {
+    font-size: 12px;
+  }
+  .blog .container .items .description {
+    font-size: 12px;
+  }
+  .inner-pager-header {
+    height: 400px;
+  }
+  .inner-pager-header .content {
+    width: 100%;
+  }
+  .inner-pager-header h1 {
+    font-size: 1.6em;
+  }
+  .single-post {
+    margin-top: 0;
+    width: auto;
+    padding: 25px 0;
+  }
+  .single-post p {
+    text-align: justify;
+  }
+}

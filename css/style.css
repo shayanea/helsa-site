@@ -24,8 +24,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(14, 20, 30);
-  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
+  background: #222327;
 }
 
 body {
@@ -184,8 +183,7 @@ a:focus {
   top: 0;
   bottom: 0;
   width: 50%;
-  background: rgb(14, 20, 30);
-  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
+  background: #222327;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
 }
@@ -197,8 +195,7 @@ a:focus {
   top: 0;
   bottom: 0;
   width: 50%;
-  background: rgb(14, 20, 30);
-  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
+  background: #222327;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
 }
@@ -375,6 +372,17 @@ header .logo-container .logo-text {
   line-height: 1.7;
 }
 
+.banner .owl-carousel .col .description {
+  display: block;
+  font-size: .8em;
+  font-family: "IranSans";
+  color: #adadad;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  line-height: 1.7;
+}
+
 .banner .owl-carousel .owl-item .item {
   width: 85%;
   margin: 0 auto;
@@ -445,7 +453,7 @@ header .logo-container .logo-text {
   min-height: 250px;
   border-radius: 26px;
   overflow: hidden;
-  padding: 40px 38px 45px;
+  padding: 40px 38px 30px;
   margin: 0 0 0 30px;
   background-color: #32343a !important;
   background-image: linear-gradient(20deg, #2b2d32, #32343a);
@@ -466,6 +474,12 @@ header .logo-container .logo-text {
   color: #fff;
   background-color: #e77842;
   background-image: linear-gradient(45deg, #e77842, #f7c068);
+}
+
+.blog .container .blue-post .item {
+  color: #fff;
+  background-color: #e77842;
+  background-image: linear-gradient(20deg, #52C2EA, #4A3BBE);
 }
 
 .blog .container .red-post .item {
@@ -497,17 +511,15 @@ header .logo-container .logo-text {
   width: 100%;
 }
 
-.blog .container .items .author {
-  font-size: 13px;
-  opacity: .9;
-  color: #fff;
-}
-
-.blog .container .items .author span {
+.blog .container .items .published-date {
   font-size: 14px;
   font-family: "IranSansBold";
-  opacity: 1;
-  margin: 0 4px;
+  color: #eaeaea;
+}
+
+.blog .container .items .description {
+  font-size: .8em;
+  color: #fff;
 }
 
 .blog .container .items .category {
@@ -637,4 +649,86 @@ footer .social-container ul li a:hover svg path {
   fill: #e7a007;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
+}
+
+.inner-pager-header {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 70vh;
+  margin-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #32343a !important;
+  background-image: linear-gradient(20deg, #2b2d32, #32343a);
+}
+
+.inner-pager-header.red-post {
+  background-color: #ff5858;
+  background-image: linear-gradient(1deg, #f857a6, #ff5858);
+}
+
+.inner-pager-header.purple-post {
+  background-color: #b53cff;
+  background-image: linear-gradient(20deg, #b53cff, #f952ff);
+}
+
+.inner-pager-header.green-post {
+  background-color: #23bd38;
+  background-image: linear-gradient(19deg, #23bd38, #41eba9);
+}
+
+.inner-pager-header.with-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+}
+
+.inner-pager-header .content {
+  position: relative;
+  z-index: 10;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inner-pager-header h1 {
+  font-style: 2em;
+  color: #fff;
+}
+
+.inner-pager-header .published-date {
+  margin-top: 25px;
+  font-size: 14px;
+  font-family: "IranSansBold";
+  color: #eaeaea;
+}
+
+.single-post {
+  position: relative;
+  z-index: 20;
+  background-color: #222327;
+  padding: 50px;
+  margin: 0 auto;
+  margin-top: -70px;
+  width: 75%;
+  border-radius: 10px;
+}
+
+.single-post p {
+  font-style: 14px;
+  color: #fff;
+  line-height: 2;
 }

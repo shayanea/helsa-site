@@ -10,7 +10,7 @@ $(window).load(function() {
 
   $(".banner .owl-carousel").owlCarousel({
     rtl: true,
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     dots: false,
