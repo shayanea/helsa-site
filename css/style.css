@@ -21,12 +21,11 @@
 
 html,
 body {
-  height: 100%;
-  max-height: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #222327;
+  background: rgb(14, 20, 30);
+  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
 }
 
 body {
@@ -38,6 +37,24 @@ body {
   word-break: break-word;
   color: #161b3d;
 }
+
+/* body header,
+body main,
+body footer {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+body.loaded header,
+body.loaded main,
+body.loaded footer {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+} */
 
 h1,
 h2,
@@ -143,6 +160,86 @@ a:focus {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  background-color: transparent;
+}
+
+.loading-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgb(14, 20, 30);
+  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+.loading-container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgb(14, 20, 30);
+  background: linear-gradient(180deg, rgba(14, 20, 30, 1) 0%, rgba(36, 42, 48, 1) 100%);
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+.loading-container.split::after {
+  transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.loading-container.split::before {
+  transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.loading-container.hide {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.loading-container span {
+  font-size: 6em;
+  font-family: "Gugi";
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+  z-index: 150;
+}
+
+.loading-container.split span {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
 }
 
 /* Header */
