@@ -732,3 +732,34 @@ footer .social-container ul li a:hover svg path {
   color: #fff;
   line-height: 2;
 }
+
+.not-found {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.not-found h1 {
+  color: #fff;
+  font-size: 6em;
+  padding: 0;
+  margin: 0;
+}
+
+.not-found h5 {
+  color: #fff;
+}
+
+.not-found a {
+  background-color: #999;
+  color: #222222;
+  padding: 20px 45px;
+  border-radius: 35px;
+  font-family: "IranSansBold";
+}
