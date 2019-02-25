@@ -2,11 +2,17 @@
   .banner .owl-carousel .col {
     width: 100%;
   }
-  .banner .owl-carousel .item {
-    flex-direction: column;
-  }
   .banner .owl-carousel .owl-item .item {
     width: 85%;
+  }
+  .banner .owl-carousel a.col {
+    margin: 0;
+  }
+  .banner .owl-carousel .redirect-btn {
+    display: block;
+  }
+  .banner .owl-carousel .item {
+    flex-direction: column;
   }
   .banner .owl-carousel .col figure img {
     height: 300px;
@@ -73,5 +79,8 @@
   }
   .single-post p {
     text-align: justify;
+  }
+  footer .menu-container {
+    display: none;
   }
 }
