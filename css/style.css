@@ -166,7 +166,6 @@ a:focus {
   object-fit: contain;
   object-position: center;
   display: block;
-  width: 100%;
 }
 
 .loading-container {

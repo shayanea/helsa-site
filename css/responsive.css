@@ -39,6 +39,9 @@
     margin-bottom: 25px;
     min-height: auto;
   }
+  .img-responsive {
+    width: 100%;
+  }
 }
 
 @media(max-width: 375px) {
