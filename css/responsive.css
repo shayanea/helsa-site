@@ -42,9 +42,15 @@
   .img-responsive {
     width: 100%;
   }
+  .blog .container .row {
+    margin-bottom: 0;
+  }
 }
 
 @media(max-width: 375px) {
+  .inner-page .container {
+    width: 100%;
+  }
   .loading-container span {
     font-size: 4em;
   }
@@ -67,21 +73,26 @@
     font-size: 12px;
   }
   .inner-pager-header {
-    height: 400px;
+    height: auto;
+    padding: 60px 10px;
   }
   .inner-pager-header .content {
     width: 100%;
   }
   .inner-pager-header h1 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
   .single-post {
     margin-top: 0;
     width: auto;
-    padding: 25px 0;
+    padding: 25px 10px;
   }
   .single-post p {
     text-align: justify;
+    font-size: 14px;
+  }
+  .single-post p strong {
+    font-size: 16px;
   }
   footer .menu-container {
     display: none;
