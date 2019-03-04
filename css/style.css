@@ -571,6 +571,88 @@ header .logo-container .logo-text {
   background-color: rgba(0, 0, 0, 0.4)
 }
 
+/* Contact Us */
+
+.contactus {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contactus .col {
+  width: 100%;
+}
+
+.contactus h2 {
+  color: #fff;
+}
+
+.contactus p {
+  color: #bbb;
+}
+
+.contactus p a {
+  color: #fff;
+}
+
+.contactus form {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contactus form .form-control {
+  padding: 10px 5px;
+  width: 100%;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: none;
+  font-family: "IranSans";
+  color: #222;
+  font-size: 15px;
+  min-width: 300px;
+  margin-bottom: 15px;
+}
+
+.contactus form textarea.form-control {
+  min-height: 100px;
+  resize: none;
+}
+
+.contactus form .form-control.error {
+  border-color: #ff5722;
+}
+
+.contactus form button {
+  font-family: "IranSansBold";
+  font-size: 14px;
+  height: auto;
+  margin: 5px 0 0 0;
+  padding: 12px 22px;
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  border: 7px solid #717171;
+  border-radius: 50px;
+  outline: 0;
+  background-color: #717171;
+}
+
+.contactus form button:hover {
+  border-color: #e7a007;
+  background-color: #e7a007;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
 /* Footer */
 
 footer {

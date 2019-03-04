@@ -49,6 +49,7 @@
     <!-- <link rel="manifest" href="/images/favicon/manifest.json" /> -->
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -72,7 +73,6 @@
         }
       }
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135170321-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -90,13 +90,10 @@
         <div class="menu-container">
           <ul>
             <li>
-              <a href="#">صفحه اصلی</a>
-            </li>
-            <li>
               <a href="/">وبلاگ</a>
             </li>
             <li>
-              <a class="active" href="#">تماس با ما</a>
+              <a class="active" href="#">ارتباط با ما</a>
             </li>
           </ul>
         </div>
@@ -106,35 +103,34 @@
       </div>
     </header>
     <main>
-      <div class="contactus">
+      <div class="container contactus">
         <div class="col">
-          <h2>با ما در تماس باشید</h2>
-          <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-            شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-          </p>
-          <a href="mailto:helsawell@gmail.com">helsawell@gmail.com</a>
+          <h2>ارتباط با ما</h2>
+          <p>از طریق ایمیل <a href="mailto:helsawell@gmail.com">helsawell@gmail.com</a> با ما در تماس باشید.</p>
         </div>
         <div class="col">
-          <form novalidate></form>
+          <form id="support" novalidate>
+            <input type="text" class="form-control" placeholder="نام و نام خانوادگی" name="fullname" maxlength="200" />
+            <input type="mobile" class="form-control" placeholder="شماره تماس" name="mobile" maxlength="11" />
+            <input type="email" class="form-control" placeholder="آدرس ایمیل" name="email" />
+            <textarea class="form-control" placeholder="متن پیام" name="message" maxlength="1000"></textarea>
+            <button class="submit-btn">ارسال پیام</button>
+          </form>
         </div>
       </div>
     </main>
     <footer>
       <div class="container">
         <div class="logo-container">
-          <span class="logo-text">HelsaWell</span>
+          <span class="logo-text">HELSA</span>
         </div>
         <div class="menu-container">
           <ul>
             <li>
-              <a class="active" href="#">صفحه اصلی</a>
-            </li>
-            <li>
               <a href="/">وبلاگ</a>
             </li>
             <li>
-              <a href="#">تماس با ما</a>
+              <a href="#">ارتباط با ما</a>
             </li>
           </ul>
         </div>

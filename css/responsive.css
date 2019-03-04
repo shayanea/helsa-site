@@ -97,4 +97,13 @@
   footer .menu-container {
     display: none;
   }
+  .contactus form {
+    width: 100%;
+  }
+  .contactus p {
+    font-size: 16px;
+  }
+  .contactus form .form-control {
+    min-width: auto;
+  }
 }
