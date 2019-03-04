@@ -229,16 +229,14 @@ a:focus {
   -webkit-transition: all .3s ease;
 }
 
-.loading-container span {
-  font-size: 6em;
-  font-family: "Gugi";
+.loading-container img {
+  width: 200px;
   background-color: transparent;
-  color: #fff;
   position: relative;
   z-index: 150;
 }
 
-.loading-container.split span {
+.loading-container.split img {
   opacity: 0;
   visibility: hidden;
   z-index: -1;
