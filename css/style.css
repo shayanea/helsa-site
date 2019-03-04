@@ -164,7 +164,9 @@ a:focus {
 .img-responsive {
   margin: 0 auto;
   object-fit: contain;
-  object-position: centere;
+  object-position: center;
+  display: block;
+  width: 100%;
 }
 
 .loading-container {
