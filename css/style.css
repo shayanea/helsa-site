@@ -161,6 +161,12 @@ a:focus {
   margin: 0 auto;
 }
 
+.img-responsive {
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: centere;
+}
+
 .loading-container {
   position: fixed;
   top: 0;
