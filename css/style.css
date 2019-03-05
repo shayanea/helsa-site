@@ -598,6 +598,23 @@ header .logo-container .logo-text {
   color: #fff;
 }
 
+.contactus .success {
+  text-align: center;
+}
+
+.contactus .success {
+  display: none;
+}
+
+.contactus .success svg {
+  width: 150px;
+}
+
+.contactus .success p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 .contactus form {
   margin: 0 auto;
   margin-top: 30px;
@@ -634,9 +651,9 @@ header .logo-container .logo-text {
 .contactus form button {
   font-family: "IranSansBold";
   font-size: 14px;
-  height: auto;
+  height: 60px;
   margin: 5px 0 0 0;
-  padding: 12px 22px;
+  padding: 0 22px;
   cursor: pointer;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
@@ -644,6 +661,9 @@ header .logo-container .logo-text {
   border-radius: 50px;
   outline: 0;
   background-color: #717171;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactus form button:hover {
