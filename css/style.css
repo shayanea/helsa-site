@@ -1,59 +1,44 @@
 @font-face {
-  font-family: "IranSansBold";
-  src: url("../fonts/IRANSansWebNum_Bold.woff") format("woff"), url("../fonts/IRANSansWebNum_Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-family: IranSansBold;
+  src: url(../fonts/IRANSansWebNum_Bold.woff) format("woff"), url(../fonts/IRANSansWebNum_Bold.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: auto
 }
 
 @font-face {
-  font-family: "IranSans";
-  src: url("../fonts/IRANSansWebNum_Light.woff") format("woff"), url("../fonts/IRANSansWebNum_Light.ttf") format("truetype");
-  font-weight: normal;
+  font-family: IranSans;
+  src: url(../fonts/IRANSansWebNum_Light.woff) format("woff"), url(../fonts/IRANSansWebNum_Light.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: auto
 }
 
 @font-face {
-  font-family: "Gugi";
-  src: url("../fonts/Gugi-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: Gugi;
+  src: url(../fonts/Gugi-Regular.ttf) format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: auto
 }
 
-html,
-body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+body,
+html {
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #222327;
+  background: #222327
 }
 
 body {
-  font-family: "IranSans";
+  font-family: IranSans;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   word-wrap: break-word;
   word-break: break-word;
-  color: #161b3d;
+  color: #161b3d
 }
-
-/* body header,
-body main,
-body footer {
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-}
-
-body.loaded header,
-body.loaded main,
-body.loaded footer {
-  opacity: 1;
-  visibility: visible;
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-} */
 
 h1,
 h2,
@@ -63,31 +48,31 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1.4;
-  margin: 5px 0 25px;
+  margin: 5px 0 25px
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 50px
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 40px
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 30px
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 25px
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 20px
 }
 
 h6 {
-  font-size: 17px;
+  font-size: 17px
 }
 
 @media (max-width:479px) {
@@ -97,25 +82,25 @@ h6 {
   h4,
   h5,
   h6 {
-    margin: 3px 0 20px;
+    margin: 3px 0 20px
   }
   h1 {
-    font-size: 37px;
+    font-size: 37px
   }
   h2 {
-    font-size: 31px;
+    font-size: 31px
   }
   h3 {
-    font-size: 25px;
+    font-size: 25px
   }
   h4 {
-    font-size: 20px;
+    font-size: 20px
   }
   h5 {
-    font-size: 15px;
+    font-size: 15px
   }
   h6 {
-    font-size: 12px;
+    font-size: 12px
   }
 }
 
@@ -126,46 +111,46 @@ h6 {
   h4,
   h5,
   h6 {
-    margin: 3px 0 20px;
+    margin: 3px 0 20px
   }
   h1 {
-    font-size: 45px;
+    font-size: 45px
   }
   h2 {
-    font-size: 35px;
+    font-size: 35px
   }
   h3 {
-    font-size: 27px;
+    font-size: 27px
   }
   h4 {
-    font-size: 22px;
+    font-size: 22px
   }
   h5 {
-    font-size: 17px;
+    font-size: 17px
   }
   h6 {
-    font-size: 14px;
+    font-size: 14px
   }
 }
 
 a,
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   text-decoration: none;
   color: #161b3d;
-  outline: 0;
+  outline: 0
 }
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .img-responsive {
   margin: 0 auto;
   object-fit: contain;
   object-position: center;
-  display: block;
+  display: block
 }
 
 .loading-container {
@@ -180,45 +165,43 @@ a:focus {
   z-index: 100;
   opacity: 1;
   visibility: visible;
-  background-color: transparent;
+  background-color: transparent
 }
 
-.loading-container::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background: #222327;
-  transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-}
-
+.loading-container::after,
 .loading-container::before {
   content: "";
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 50%;
   background: #222327;
+  top: 0;
+  bottom: 0
+}
+
+.loading-container::after {
+  left: 0;
   transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0)
+}
+
+.loading-container::before {
+  right: 0;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0)
 }
 
 .loading-container.split::after {
   transform: translate(-100%, 0);
   -webkit-transform: translate(-100%, 0);
   transition: all .6s ease;
-  -webkit-transition: all .6s ease;
+  -webkit-transition: all .6s ease
 }
 
 .loading-container.split::before {
   transform: translate(100%, 0);
   -webkit-transform: translate(100%, 0);
   transition: all .6s ease;
-  -webkit-transition: all .6s ease;
+  -webkit-transition: all .6s ease
 }
 
 .loading-container.hide {
@@ -226,14 +209,14 @@ a:focus {
   visibility: hidden;
   z-index: -1;
   transition: all .3s ease;
-  -webkit-transition: all .3s ease;
+  -webkit-transition: all .3s ease
 }
 
 .loading-container img {
   width: 200px;
   background-color: transparent;
   position: relative;
-  z-index: 150;
+  z-index: 150
 }
 
 .loading-container.split img {
@@ -241,106 +224,102 @@ a:focus {
   visibility: hidden;
   z-index: -1;
   transition: all .1s ease;
-  -webkit-transition: all .1s ease;
+  -webkit-transition: all .1s ease
 }
 
-/* Header */
-
 header {
-  padding: 25px 0;
+  padding: 25px 0
 }
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: row
 }
 
 header .menu-container ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none
 }
 
 header .menu-container ul li {
-  display: inline-block;
+  display: inline-block
 }
 
 header .menu-container ul li a {
   padding: 10px 15px;
   font-size: 14px;
   color: #fff;
-  font-family: "IranSansBold";
-  position: relative;
+  font-family: IranSansBold;
+  position: relative
 }
 
 header .menu-container ul li a::before {
   content: '';
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 header .menu-container ul li a:hover::before {
   opacity: 1;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 header .menu-container ul li a.active::before {
   opacity: 1;
   background-color: #e7a007;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 header .logo-container .logo-text {
   font-size: 2em;
-  font-family: "Gugi";
-  color: #fff;
+  font-family: Gugi;
+  color: #fff
 }
 
-/* Main */
-
 .banner {
-  padding: 25px 0;
+  padding: 25px 0
 }
 
 .banner .owl-carousel .item {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row
 }
 
 .banner .owl-carousel .col {
-  width: 50%;
+  width: 50%
 }
 
 .banner .owl-carousel a.col {
   margin-right: 50px;
-  padding: 5% 0 0 5%;
+  padding: 5% 0 0 5%
 }
 
 .banner .owl-carousel .col figure {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 .banner .owl-carousel .col figure img {
   height: 70vh;
   object-fit: cover;
-  object-position: center;
+  object-position: center
 }
 
 .banner .owl-carousel .col .featured-label {
@@ -354,38 +333,36 @@ header .logo-container .logo-text {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #fff
 }
 
 .banner .owl-carousel .col .featured-label svg {
-  height: 15px;
+  height: 15px
 }
 
 .banner .owl-carousel .col .featured-label span {
-  font-family: "IranSansBold";
+  font-family: IranSansBold;
   font-size: 12px;
-  margin-right: 5px;
+  margin-right: 5px
 }
 
 .banner .owl-carousel .col .text {
   font-size: 2.5em;
-  font-family: "IranSansBold";
+  font-family: IranSansBold;
   color: #fff;
-  margin: 0;
+  margin: 30px 0 0;
   padding: 0;
-  margin-top: 30px;
-  line-height: 1.7;
+  line-height: 1.7
 }
 
 .banner .owl-carousel .col .description {
   display: block;
   font-size: .8em;
-  font-family: "IranSans";
+  font-family: IranSans;
   color: #adadad;
-  margin: 0;
+  margin: 30px 0 0;
   padding: 0;
-  margin-top: 30px;
-  line-height: 1.7;
+  line-height: 1.7
 }
 
 .banner .owl-carousel .redirect-btn {
@@ -393,15 +370,15 @@ header .logo-container .logo-text {
   border-radius: 40px;
   color: #222;
   background-color: #fff;
-  margin: 25px auto 15px auto;
+  margin: 25px auto 15px;
   font-size: 14px;
-  font-family: "IranSansBold";
-  display: none;
+  font-family: IranSansBold;
+  display: none
 }
 
 .banner .owl-carousel .owl-item .item {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .banner .owl-carousel .owl-nav {
@@ -409,55 +386,55 @@ header .logo-container .logo-text {
   left: 5%;
   top: 50%;
   transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%)
 }
 
 .banner .owl-carousel .owl-nav button.owl-next {
   font-size: 6em;
   color: #999;
   line-height: 0;
-  outline: none;
+  outline: 0
 }
 
 .banner .owl-carousel .owl-nav button.owl-next:hover {
-  color: #fff;
+  color: #fff
 }
 
 .banner .owl-carousel .owl-nav button.owl-prev {
-  display: none;
+  display: none
 }
 
 .blog {
   position: relative;
   margin-top: -50px;
-  z-index: 10;
+  z-index: 10
 }
 
 .blog .container .row {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .blog .container .items {
   position: relative;
   -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  transition: all .2s ease
 }
 
 .blog .container .col-sm {
-  width: 33.33333333%;
+  width: 33.33333333%
 }
 
 .blog .container .col-lg {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 40%;
-  flex: 1 0 40%;
+  flex: 1 0 40%
 }
 
 .blog .container .row .items:last-child .item {
-  margin-left: 0;
+  margin-left: 0
 }
 
 .blog .container .row .item {
@@ -472,50 +449,50 @@ header .logo-container .logo-text {
   padding: 40px 33px 30px;
   margin: 0 0 0 30px;
   background-color: #32343a !important;
-  background-image: linear-gradient(20deg, #2b2d32, #32343a);
+  background-image: linear-gradient(20deg, #2b2d32, #32343a)
 }
 
 .blog .container .row .item.col-sm {
-  padding: 30px 28px 35px;
+  padding: 30px 28px 35px
 }
 
 .blog .container .items:hover {
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
   -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  transition: all .2s ease
 }
 
 .blog .container .orange-post .item {
   color: #fff;
   background-color: #e77842;
-  background-image: linear-gradient(45deg, #e77842, #f7c068);
+  background-image: linear-gradient(45deg, #e77842, #f7c068)
 }
 
 .blog .container .blue-post .item {
   color: #fff;
   background-color: #e77842;
-  background-image: linear-gradient(20deg, #52C2EA, #4A3BBE);
+  background-image: linear-gradient(20deg, #52C2EA, #4A3BBE)
 }
 
 .blog .container .red-post .item {
   background-color: #ff5858;
-  background-image: linear-gradient(1deg, #f857a6, #ff5858);
+  background-image: linear-gradient(1deg, #f857a6, #ff5858)
 }
 
 .blog .container .purple-post .item {
   background-color: #b53cff;
-  background-image: linear-gradient(20deg, #b53cff, #f952ff);
+  background-image: linear-gradient(20deg, #b53cff, #f952ff)
 }
 
 .blog .container .green-post .item {
   background-color: #23bd38;
-  background-image: linear-gradient(19deg, #23bd38, #41eba9);
+  background-image: linear-gradient(19deg, #23bd38, #41eba9)
 }
 
 .blog .container .items .content {
   position: relative;
-  z-index: 10;
+  z-index: 10
 }
 
 .blog .container .items h2 {
@@ -524,26 +501,26 @@ header .logo-container .logo-text {
   line-height: 1.75;
   margin-left: 10%;
   color: #fff;
-  width: 100%;
+  width: 100%
 }
 
 .blog .container .items .published-date {
   font-size: 14px;
-  font-family: "IranSansBold";
-  color: #eaeaea;
+  font-family: IranSansBold;
+  color: #eaeaea
 }
 
 .blog .container .items .description {
   font-size: .8em;
-  color: #fff;
+  color: #fff
 }
 
 .blog .container .items .category {
   font-size: 13px;
-  font-family: "IranSansBold";
+  font-family: IranSansBold;
   color: #fff;
   z-index: 10;
-  position: relative;
+  position: relative
 }
 
 .blog .container .items .items-image {
@@ -554,8 +531,8 @@ header .logo-container .logo-text {
   left: 0;
   width: 100%;
   height: 100%;
-  background: no-repeat center center;
-  background-size: cover;
+  background: center center no-repeat;
+  background-size: cover
 }
 
 .blog .container .items .items-image::after {
@@ -568,10 +545,8 @@ header .logo-container .logo-text {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, .4)
 }
-
-/* Contact Us */
 
 .contactus {
   min-height: 60vh;
@@ -579,50 +554,46 @@ header .logo-container .logo-text {
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column
 }
 
 .contactus .col {
-  width: 100%;
+  width: 100%
 }
 
 .contactus h2 {
-  color: #fff;
+  color: #fff
 }
 
 .contactus p {
-  color: #bbb;
+  color: #bbb
 }
 
 .contactus p a {
-  color: #fff;
+  color: #fff
 }
 
 .contactus .success {
   text-align: center;
-}
-
-.contactus .success {
-  display: none;
+  display: none
 }
 
 .contactus .success svg {
-  width: 150px;
+  width: 150px
 }
 
 .contactus .success p {
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .contactus form {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 40%;
+  width: 40%
 }
 
 .contactus form .form-control {
@@ -631,28 +602,28 @@ header .logo-container .logo-text {
   background-color: #fff;
   border-color: transparent;
   border-radius: 4px;
-  outline: none;
-  font-family: "IranSans";
+  outline: 0;
+  font-family: IranSans;
   color: #222;
   font-size: 15px;
   min-width: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .contactus form textarea.form-control {
   min-height: 100px;
-  resize: none;
+  resize: none
 }
 
 .contactus form .form-control.error {
-  border-color: #ff5722;
+  border-color: #ff5722
 }
 
 .contactus form button {
-  font-family: "IranSansBold";
+  font-family: IranSansBold;
   font-size: 14px;
   height: 60px;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0;
   padding: 0 22px;
   cursor: pointer;
   -webkit-transition: all .15s ease;
@@ -663,110 +634,105 @@ header .logo-container .logo-text {
   background-color: #717171;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .contactus form button:hover {
   border-color: #e7a007;
   background-color: #e7a007;
   -webkit-transition: all .15s ease;
-  transition: all .15s ease;
+  transition: all .15s ease
 }
 
-/* Footer */
-
 footer {
-  padding: 100px 0 25px 0;
+  padding: 100px 0 25px
 }
 
 footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: row
+}
+
+footer .menu-container ul li,
+footer .social-container ul li {
+  display: inline-block
 }
 
 footer .menu-container ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
-
-footer .menu-container ul li {
-  display: inline-block;
+  list-style: none
 }
 
 footer .menu-container ul li a {
   padding: 10px 15px;
   font-size: 12px;
   color: #fff;
-  font-family: "IranSansBold";
-  position: relative;
+  font-family: IranSansBold;
+  position: relative
 }
 
 footer .menu-container ul li a::before {
   content: '';
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 footer .menu-container ul li a:hover::before {
   opacity: 1;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 footer .menu-container ul li a.active::before {
   opacity: 1;
   background-color: #e7a007;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 footer .logo-container .logo-text {
   font-size: 1.3em;
-  font-family: "Gugi";
-  color: #fff;
+  font-family: Gugi;
+  color: #fff
 }
 
 footer .social-container ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
-
-footer .social-container ul li {
-  display: inline-block;
+  list-style: none
 }
 
 footer .social-container ul li a {
   padding: 0 10px;
-  position: relative;
+  position: relative
 }
 
 footer .social-container ul li a svg {
   width: 15px;
-  height: 15px;
+  height: 15px
 }
 
 footer .social-container ul li a svg path {
   fill: #fff;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 footer .social-container ul li a:hover svg path {
   fill: #e7a007;
   -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease
 }
 
 .inner-pager-header {
@@ -780,22 +746,22 @@ footer .social-container ul li a:hover svg path {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #32343a !important;
-  background-image: linear-gradient(20deg, #2b2d32, #32343a);
+  background-image: linear-gradient(20deg, #2b2d32, #32343a)
 }
 
 .inner-pager-header.red-post {
   background-color: #ff5858;
-  background-image: linear-gradient(1deg, #f857a6, #ff5858);
+  background-image: linear-gradient(1deg, #f857a6, #ff5858)
 }
 
 .inner-pager-header.purple-post {
   background-color: #b53cff;
-  background-image: linear-gradient(20deg, #b53cff, #f952ff);
+  background-image: linear-gradient(20deg, #b53cff, #f952ff)
 }
 
 .inner-pager-header.green-post {
   background-color: #23bd38;
-  background-image: linear-gradient(19deg, #23bd38, #41eba9);
+  background-image: linear-gradient(19deg, #23bd38, #41eba9)
 }
 
 .inner-pager-header.with-image::before {
@@ -805,8 +771,8 @@ footer .social-container ul li a:hover svg path {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 4;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 4
 }
 
 .inner-pager-header .content {
@@ -819,19 +785,19 @@ footer .social-container ul li a:hover svg path {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .inner-pager-header h1 {
   font-style: 2em;
-  color: #fff;
+  color: #fff
 }
 
 .inner-pager-header .published-date {
   margin-top: 25px;
   font-size: 14px;
-  font-family: "IranSansBold";
-  color: #eaeaea;
+  font-family: IranSansBold;
+  color: #eaeaea
 }
 
 .single-post {
@@ -839,16 +805,20 @@ footer .social-container ul li a:hover svg path {
   z-index: 20;
   background-color: #222327;
   padding: 50px;
-  margin: 0 auto;
-  margin-top: -70px;
+  margin: -70px auto 0;
   width: 75%;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 .single-post p {
   font-style: 14px;
   color: #fff;
-  line-height: 2;
+  line-height: 2
+}
+
+.single-post a {
+  color: #03a9f4;
+  text-decoration: underline
 }
 
 .not-found {
@@ -860,24 +830,24 @@ footer .social-container ul li a:hover svg path {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column
 }
 
 .not-found h1 {
   color: #fff;
   font-size: 6em;
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 .not-found h5 {
-  color: #fff;
+  color: #fff
 }
 
 .not-found a {
   background-color: #999;
-  color: #222222;
+  color: #222;
   padding: 20px 45px;
   border-radius: 35px;
-  font-family: "IranSansBold";
+  font-family: IranSansBold
 }
