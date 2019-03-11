@@ -417,6 +417,10 @@ header .logo-container .logo-text {
   margin-bottom: 30px
 }
 
+.blog .container .full-height {
+  align-items: stretch;
+}
+
 .blog .container .items {
   position: relative;
   -webkit-transition: all .2s ease;
@@ -437,6 +441,10 @@ header .logo-container .logo-text {
   margin-left: 0
 }
 
+.blog .container .row.full-height .col-sm .items:last-child .item {
+  margin-left: 30px;
+}
+
 .blog .container .row .item {
   position: relative;
   display: flex;
@@ -450,6 +458,10 @@ header .logo-container .logo-text {
   margin: 0 0 0 30px;
   background-color: #32343a !important;
   background-image: linear-gradient(20deg, #2b2d32, #32343a)
+}
+
+.blog .container .row .full-height-item {
+  height: 70vh;
 }
 
 .blog .container .row .item.col-sm {
@@ -505,6 +517,8 @@ header .logo-container .logo-text {
 }
 
 .blog .container .items .published-date {
+  position: relative;
+  z-index: 10;
   font-size: 14px;
   font-family: IranSansBold;
   color: #eaeaea

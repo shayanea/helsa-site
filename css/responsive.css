@@ -1,6 +1,7 @@
 @media(max-width: 990px) {
   .banner .owl-carousel .col {
     width: 100%;
+    text-align: center;
   }
   .banner .owl-carousel .owl-item .item {
     width: 85%;
@@ -9,7 +10,9 @@
     margin: 0;
   }
   .banner .owl-carousel .redirect-btn {
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
   }
   .banner .owl-carousel .item {
     flex-direction: column;
@@ -22,11 +25,9 @@
   }
   .banner .owl-carousel .col .text {
     font-size: 1.8em;
-    text-align: center;
   }
   .banner .owl-carousel .col .description {
     font-size: 14px;
-    text-align: center;
   }
   main .blog {
     margin-top: 0;
@@ -44,6 +45,9 @@
   }
   .blog .container .row {
     margin-bottom: 0;
+  }
+  .blog .container .row .full-height-item {
+    height: auto;
   }
 }
 
@@ -70,7 +74,7 @@
     font-size: 12px;
   }
   .blog .container .items .description {
-    font-size: 12px;
+    display: none;
   }
   .inner-pager-header {
     height: auto;
@@ -105,5 +109,16 @@
   }
   .contactus form .form-control {
     min-width: auto;
+  }
+  .blog .container .row.full-height .col-sm .items:last-child .item {
+    margin-left: 0;
+  }
+  .banner .owl-carousel .redirect-btn {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .banner .owl-carousel .col {
+    text-align: center;
   }
 }
