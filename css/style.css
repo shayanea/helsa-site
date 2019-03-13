@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: IranSansEnglish;
+  src: url(../fonts/IRANSansWeb.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto
+}
+
+@font-face {
   font-family: Gugi;
   src: url(../fonts/Gugi-Regular.ttf) format("truetype");
   font-weight: 400;
@@ -825,7 +833,7 @@ footer .social-container ul li a:hover svg path {
 }
 
 .single-post p {
-  font-style: 14px;
+  /* font-size: 14px; */
   color: #fff;
   line-height: 2
 }
@@ -864,4 +872,74 @@ footer .social-container ul li a:hover svg path {
   padding: 20px 45px;
   border-radius: 35px;
   font-family: IranSansBold
+}
+
+.resource-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #32343a !important;
+}
+
+.resource-container .resource-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #28292e;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.resource-container .resource-title p {
+  font-size: 1em;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-container .resource-title .arrow {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI4NC45MjkgMjg0LjkyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg0LjkyOSAyODQuOTI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNMjgyLjA4Miw3Ni41MTFsLTE0LjI3NC0xNC4yNzNjLTEuOTAyLTEuOTA2LTQuMDkzLTIuODU2LTYuNTctMi44NTZjLTIuNDcxLDAtNC42NjEsMC45NS02LjU2MywyLjg1NkwxNDIuNDY2LDE3NC40NDEgICBMMzAuMjYyLDYyLjI0MWMtMS45MDMtMS45MDYtNC4wOTMtMi44NTYtNi41NjctMi44NTZjLTIuNDc1LDAtNC42NjUsMC45NS02LjU2NywyLjg1NkwyLjg1Niw3Ni41MTVDMC45NSw3OC40MTcsMCw4MC42MDcsMCw4My4wODIgICBjMCwyLjQ3MywwLjk1Myw0LjY2MywyLjg1Niw2LjU2NWwxMzMuMDQzLDEzMy4wNDZjMS45MDIsMS45MDMsNC4wOTMsMi44NTQsNi41NjcsMi44NTRzNC42NjEtMC45NTEsNi41NjItMi44NTRMMjgyLjA4Miw4OS42NDcgICBjMS45MDItMS45MDMsMi44NDctNC4wOTMsMi44NDctNi41NjVDMjg0LjkyOSw4MC42MDcsMjgzLjk4NCw3OC40MTcsMjgyLjA4Miw3Ni41MTF6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjZmZmZmZmIj48L3BhdGg+CjwvZz48L2c+IDwvc3ZnPg==);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.resource-container.expand .resource-title .arrow {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.resource-container .resource-content {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  -moz-transition: max-height 0.5s ease;
+  -webkit-transition: max-height 0.5s ease;
+  -o-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+}
+
+.resource-container.expand .resource-content {
+  max-height: 500px;
+  -moz-transition: max-height 1s ease;
+  -webkit-transition: max-height 1s ease;
+  -o-transition: max-height 1s ease;
+  transition: max-height 1s ease;
+}
+
+.resource-container .resource-content p {
+  font-size: 14px;
+  direction: ltr;
+  font-family: "IranSansEnglish";
 }

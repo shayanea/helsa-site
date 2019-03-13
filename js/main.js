@@ -4,6 +4,9 @@ $(window).load(function() {
       String(t).toLowerCase()
     );
   }
+  $(document).on("click", ".resource-container .resource-title", function(e) {
+    $(".resource-container").toggleClass("expand");
+  });
   setTimeout(function() {
     $(".loading-container").addClass("split");
   }, 1e3),
