@@ -49,6 +49,12 @@
   .blog .container .row .full-height-item {
     height: auto;
   }
+  .blog .container .full-height .sidebar {
+    display: inline-block;
+  }
+  .blog .container .full-height .sidebar .item {
+    margin-left: 0 !important;
+  }
 }
 
 @media(max-width: 375px) {
