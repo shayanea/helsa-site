@@ -35,7 +35,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #222327
+  background: #fff
 }
 
 body {
@@ -195,7 +195,7 @@ a:hover {
   content: "";
   position: absolute;
   width: 50%;
-  background: #222327;
+  background: #fff;
   top: 0;
   bottom: 0
 }
@@ -273,7 +273,7 @@ header .menu-container ul li {
 header .menu-container ul li a {
   padding: 10px 15px;
   font-size: 14px;
-  color: #fff;
+  color: #444;
   font-family: IranSansBold;
   position: relative
 }
@@ -286,7 +286,7 @@ header .menu-container ul li a::before {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #444;
   opacity: 0;
   -webkit-transition: all .25s ease;
   transition: all .25s ease
@@ -308,7 +308,7 @@ header .menu-container ul li a.active::before {
 header .logo-container .logo-text {
   font-size: 2em;
   font-family: Gugi;
-  color: #fff
+  color: #444;
 }
 
 .banner {
@@ -355,7 +355,7 @@ header .logo-container .logo-text {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   border-radius: 20px;
-  background-color: #fff
+  background-color: #444;
 }
 
 .banner .owl-carousel .col .featured-label svg {
@@ -371,7 +371,7 @@ header .logo-container .logo-text {
 .banner .owl-carousel .col .text {
   font-size: 2.5em;
   font-family: IranSansBold;
-  color: #fff;
+  color: #444;
   margin: 30px 0 0;
   padding: 0;
   line-height: 1.7
@@ -381,7 +381,7 @@ header .logo-container .logo-text {
   display: block;
   font-size: .8em;
   font-family: IranSans;
-  color: #adadad;
+  color: #666;
   margin: 30px 0 0;
   padding: 0;
   line-height: 1.7
@@ -413,13 +413,13 @@ header .logo-container .logo-text {
 
 .banner .owl-carousel .owl-nav button.owl-next {
   font-size: 6em;
-  color: #999;
+  color: #444;
   line-height: 0;
   outline: 0
 }
 
 .banner .owl-carousel .owl-nav button.owl-next:hover {
-  color: #fff
+  color: #222
 }
 
 .banner .owl-carousel .owl-nav button.owl-prev {
@@ -720,7 +720,7 @@ footer .menu-container ul {
 footer .menu-container ul li a {
   padding: 10px 15px;
   font-size: 12px;
-  color: #fff;
+  color: #444;
   font-family: IranSansBold;
   position: relative
 }
@@ -733,7 +733,7 @@ footer .menu-container ul li a::before {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #444;
   opacity: 0;
   -webkit-transition: all .25s ease;
   transition: all .25s ease
@@ -755,7 +755,7 @@ footer .menu-container ul li a.active::before {
 footer .logo-container .logo-text {
   font-size: 1.3em;
   font-family: Gugi;
-  color: #fff
+  color: #444
 }
 
 footer .social-container ul {
@@ -775,7 +775,7 @@ footer .social-container ul li a svg {
 }
 
 footer .social-container ul li a svg path {
-  fill: #fff;
+  fill: #444;
   -webkit-transition: all .25s ease;
   transition: all .25s ease
 }
