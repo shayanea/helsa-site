@@ -45,7 +45,8 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   word-break: break-word;
-  color: #161b3d
+  color: #161b3d;
+  margin: 0;
 }
 
 h1,
@@ -249,6 +250,14 @@ a:hover {
   -webkit-transition: all .1s ease
 }
 
+.main-page header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #286EFE;
+}
+
 header {
   padding: 25px 0
 }
@@ -276,6 +285,10 @@ header .menu-container ul li a {
   color: #444;
   font-family: IranSansBold;
   position: relative
+}
+
+.main-page header .menu-container ul li a {
+  color: #fff;
 }
 
 header .menu-container ul li a::before {
@@ -309,6 +322,28 @@ header .logo-container .logo-text {
   font-size: 2em;
   font-family: Gugi;
   color: #444;
+}
+
+.main-page header .logo-container .logo-text {
+  color: #fff;
+}
+
+.main-page .banner-container {
+  background-color: #286EFE;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+}
+
+.main-page .banner-container .column {
+  width: 50%;
+}
+
+
+.main-page .banner-container .column img {
+  height: 450px;
+  object-fit: contain;
 }
 
 .banner {
