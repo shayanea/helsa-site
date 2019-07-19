@@ -12,26 +12,17 @@
     <meta name="MobileOptimized" content="320" />
     <meta http-equiv="content-language" content="fa-IR" />
     <meta name="author" content="helsawell" />
-    <meta
-      name="description"
-      content="We live in a century that knowing your body and what you eat is a must! Food culture is something that has changed and sometimes got messed up over the time due to time constraints and lack of science. We are here to give you the knowledge and awareness about your body and the food you eat because you are what you eat! "
-    />
+    <meta name="description" content="با هلساوِل سبک تغذیه‌ خود را متحول کنید و سالم‌تر زندگی کنید!" />
     <meta property="og:site_name" content="HelsaWell" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Helsa" />
-    <meta
-      property="og:description"
-      content="We live in a century that knowing your body and what you eat is a must! Food culture is something that has changed and sometimes got messed up over the time due to time constraints and lack of science. We are here to give you the knowledge and awareness about your body and the food you eat because you are what you eat! "
-    />
+    <meta property="og:description" content="با هلساوِل سبک تغذیه‌ خود را متحول کنید و سالم‌تر زندگی کنید!" />
     <meta property="og:url" content="https://helsawell.com/" />
     <meta property="article:publisher" content="https://helsawell.com/" />
     <meta property="article:author" content="https://helsawell.com/" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Helsa" />
-    <meta
-      name="twitter:description"
-      content="We live in a century that knowing your body and what you eat is a must! Food culture is something that has changed and sometimes got messed up over the time due to time constraints and lack of science. We are here to give you the knowledge and awareness about your body and the food you eat because you are what you eat! "
-    />
+    <meta name="twitter:description" content="با هلساوِل سبک تغذیه‌ خود را متحول کنید و سالم‌تر زندگی کنید!" />
     <meta name="twitter:url" content="https://helsawell.com/" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Helsa" />
@@ -55,8 +46,8 @@
     <meta name="theme-color" content="#222327" />
     <!-- <link rel="manifest" href="/images/favicon/manifest.json" /> -->
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css?v=222" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -73,7 +64,7 @@
         },
         "headline": "Helsa",
         "url": "https://helsawell.com/",
-        "description": "We live in a century that knowing your body and what you eat is a must! Food culture is something that has changed and sometimes got messed up over the time due to time constraints and lack of science. We are here to give you the knowledge and awareness about your body and the food you eat because you are what you eat! ",
+        "description": "با هلساوِل سبک تغذیه‌ خود را متحول کنید و سالم‌تر زندگی کنید!",
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://helsawell.com"
@@ -116,10 +107,10 @@
         <div class="menu-container">
           <ul>
             <li>
-              <a class="active" href="#">صفحه اصلی</a>
+              <a class="active" href="/">صفحه اصلی</a>
             </li>
             <li>
-              <a href="/">وبلاگ</a>
+              <a href="/blog.html">وبلاگ</a>
             </li>
             <li>
               <a href="/contact.html">ارتباط با ما</a>
@@ -133,13 +124,241 @@
     </header>
     <main>
       <div class="banner-container">
-        <div class="column">
-          <img src="./images/banner/device.png" alt="Helsawell" />
+        <div class="container">
+          <div class="column">
+            <h2>با هلساوِل سبک تغذیه‌ خود را متحول کنید و سالم‌تر زندگی کنید!</h2>
+            <p>
+              ما به شما کمک می‌کنیم تا بدون رژیم گرفتن و آگاهانه از یک سبک تغذیه‌ درست لذت ببرید.
+            </p>
+            <a id="goToDownload" href="/" class="filled">به‌زودی</a>
+            <a id="goToFeatures" href="/">ویژگی‌ها</a>
+          </div>
+          <div class="column">
+            <img src="./images/banner/device.png?v=2" alt="Helsawell" />
+          </div>
         </div>
-        <div class="column">
-          <h2>کیفیت و سلامتی را با ما تجربه کنید.</h2>
-          <p>أپلیکیشن هلساول را برای آیفون(آی او اس) و اندروید را از لینک زیر دانلود نمایید.</p>
+      </div>
+      <div class="section-0 container">
+        <h2>محاسبه BMR و BMI</h2>
+        <div class="row">
+          <form class="bmi-calculator column" novalidate>
+            <div class="form-group">
+              <label>جنسیت</label>
+              <select class="form-control" name="gender">
+                <option value="1">زن</option>
+                <option value="2">مرد</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>سن</label>
+              <input name="age" class="form-control" maxlength="3" />
+            </div>
+            <div class="form-group">
+              <label>قد</label>
+              <input name="height" class="form-control" maxlength="3" />
+            </div>
+            <div class="form-group">
+              <label>وزن</label>
+              <input name="weight" class="form-control" maxlength="3" />
+            </div>
+            <div class="form-group">
+              <label>وزن دلخواه</label>
+              <input name="weight" class="form-control" maxlength="3" />
+            </div>
+            <div class="form-group">
+              <label>میزان فعالیت</label>
+              <select class="form-control" name="activity">
+                <option value="1">کم یا بدون فعالیت</option>
+                <option value="2">۳ روز در هفته</option>
+                <option value="3">۴ روز در هفته</option>
+                <option value="4">۵ روز در هفته</option>
+                <option value="5">هر روز</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>هدف</label>
+              <select class="form-control goal" name="goal">
+                <option value="1">سالم ماندن</option>
+                <option value="2">کاهش وزن</option>
+                <option value="3">افزایش وزن</option>
+              </select>
+            </div>
+            <div id="rangePicker" style="display:none">
+              <div class="form-group" style="margin-bottom: 0">
+                <label>هدف هفته‌ای (کیلو‌گرم)</label>
+                <input class="form-control range" name="duration" type="range" name="points" min="0.2" max="1" value="0.2" step="0.1" />
+              </div>
+              <div class="form-group">
+                <div class="range-result"><span id="range-title">کم کردن:</span> <span id="range-result">۰.۲ کیلو‌گرم در هفته</span></div>
+              </div>
+            </div>
+            <button class="submit-btn">محاسبه</button>
+          </form>
+          <div class="column">
+            <h5>میزان سوخت و ساز (BMR)</h5>
+            <p><span class="bmr-message"></span> شما مجاز به مصرف <span class="bmr-score">0</span> کالری در ۲۴ ساعت هستید.</p>
+            <div class="divider"></div>
+            <a href="https://fa.wikipedia.org/wiki/شاخص_توده_بدنی" target="_blank"><h5>شاخص توده بدنی (BMI)</h5></a>
+            <p class="bmi-score">0</p>
+            <p class="bmi-message"></p>
+            <div class="bmi-color"></div>
+          </div>
         </div>
+      </div>
+      <div class="section-1 container">
+        <h2>ویژگی‌ها و امکانات هلساول</h2>
+        <p>با اپلیکیشن هلساول می‌توانید از امکانات مختلف برای بهبود سبک زندگی‌تان استفاده کنید:</p>
+        <div class="row">
+          <div class="items">
+            <img src="images/icons/bathroom-scale.svg" />
+            <h3>BMI & BMR</h3>
+            <p>BMR به شما نشان می‌دهد برای رسیدن به وزن دلخواه در روز چه مقدار کالری می‌توانید مصرف کنید. BMI به شما نشان می‌دهد از نظر چاقی یا لاغری در چه وضعیتی هستید.</p>
+          </div>
+          <div class="items">
+            <img src="images/icons/calories.svg" />
+            <h3>کالری شمار</h3>
+            <p>(کالری شمار) با استفاده از کالری‌ شمار می‌توانید کالری غذای روزانه خود را وارد و ذخیره کنید.</p>
+          </div>
+          <div class="items">
+            <img src="images/icons/diet.svg" />
+            <h3>دستورهای‌ غذایی سالم</h3>
+            <p>(دستورهای غذایی سالم) با دستورهای غذایی هلساول، غذاهای خوشمزه و در عین حال سالم درست کنید.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-2">
+        <div class="container">
+          <div class="column">
+            <h2>سوابق فعالیت‌ها و خورد و خوراک شما</h2>
+            <p>در این بخش تاریخچه کالری غذاهای مصرفی روزانه و فعالیت‌های ورزشی خود را می‌توانید <br />به صورت ماهانه مشاهده کنید.</p>
+          </div>
+          <img src="./images/banner/device-2.png" alt="Helsawell" />
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="container">
+          <img src="./images/banner/device-3.png" alt="Helsawell" />
+          <div class="column">
+            <h3>جایگزین‌ها</h3>
+            <p>
+              اپلیکیشن هلساول همچنین برای شما جایگزین‌های سالمی برای مواد غذایی ناسالم در نظر گرفته است.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section-4">
+        <!-- <div class="container">
+          <h2 class="title">تعرفه‌ها</h2>
+          <div class="row">
+            <div class="items special">
+              <div class="header">
+                <h3>۱ ساله</h3>
+                <h2>۶۰,۰۰۰ تومان</h2>
+              </div>
+              <div class="body">
+                <span>رژیم‌ها</span>
+                <span>وارد کردن غذا</span>
+                <span>وارد کردن آب</span>
+                <span>وارد کردن ورزش</span>
+                <span>دستورهای غذایی</span>
+                <span>ورزش‌های در خانه</span>
+                <span>غذاهای جایگزین</span>
+              </div>
+            </div>
+            <div class="items">
+              <div class="header">
+                <h3>۱ ماهه</h3>
+                <h2>۶,۰۰۰ تومان</h2>
+              </div>
+              <div class="body">
+                <span>رژیم‌ها</span>
+                <span>وارد کردن غذا</span>
+                <span>وارد کردن آب</span>
+                <span>وارد کردن ورزش</span>
+                <span>دستورهای غذایی</span>
+                <span>ورزش‌های در خانه</span>
+                <span>غذاهای جایگزین</span>
+              </div>
+            </div>
+            <div class="items">
+              <div class="header">
+                <h3>۳ ماهه</h3>
+                <h2>۱۵,۰۰۰ تومان</h2>
+              </div>
+              <div class="body">
+                <span>رژیم‌ها</span>
+                <span>وارد کردن غذا</span>
+                <span>وارد کردن آب</span>
+                <span>وارد کردن ورزش</span>
+                <span>دستورهای غذایی</span>
+                <span>ورزش‌های در خانه</span>
+                <span>غذاهای جایگزین</span>
+              </div>
+            </div>
+            <div class="items">
+              <div class="header">
+                <h3>۶ ماهه</h3>
+                <h2>۳۰,۰۰۰ تومان</h2>
+              </div>
+              <div class="body">
+                <span>رژیم‌ها</span>
+                <span>وارد کردن غذا</span>
+                <span>وارد کردن آب</span>
+                <span>وارد کردن ورزش</span>
+                <span>دستورهای غذایی</span>
+                <span>ورزش‌های در خانه</span>
+                <span>غذاهای جایگزین</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="section-5">
+        <h2>همین الان دانلود</h2>
+        <div class="row">
+          <a href="/" class="android"></a>
+          <a href="/" class="ios"></a>
+        </div>
+      </div> -->
+      <div class="section-6 container">
+        <h2 class="title">آخرین مقالات</h2>
+        <!-- <p class="desctiption">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p> -->
+        <div class="row">
+          <a href="/posts/14.html" class="items">
+            <div
+              class="header"
+              style="background-color: #f857a5;
+						background-image: linear-gradient(20deg, #f857a5, #FF5858)"
+            ></div>
+            <div class="content">
+              <h2>۲۰ دلیل رایج که سبب می‌شود وزن شما پایین نیاید</h2>
+              <span>تاریخ انتشار: ۲۳ تیر ۱۳۹۷ </span>
+              <p>
+                وزن شما ممکن است به دلایل مختلف برای مدتی ثابت بماند. یکی از آن دلایل این است که بدن شما چه قدر آب در خود نگه می‌دارد.
+              </p>
+            </div>
+          </a>
+          <a href="/posts/14.html" class="items">
+            <div class="header" style="background-color: #E6B980;background-image: linear-gradient(19deg, #E6B980, #EACEA3);"></div>
+            <div class="content">
+              <h2>گرما زدگی</h2>
+              <span>تاریخ انتشار: ۲۷ خرداد ۱۳۹۷ </span>
+              <p>
+                در هوای گرم تابستان خیلی وقت‌ها پیش میاد که ما مجبور می‌شویم یک مسافت طولانی را پیاده روی کنیم، ممکن است حتی برای ورزش از فضای بیرون استفاده کنیم یا آفتاب بگیریم.
+                همه‌ی اینها باعث تعریق و از بین رفتن نمک بدن و گرمازدگی می‌شوند.
+              </p>
+            </div>
+          </a>
+          <a href="/posts/13.html" class="items">
+            <div class="header" style="background-image: url(./images/13.jpg);"></div>
+            <div class="content">
+              <h2>۱۰ عادت سالمِ ۱۰ ورزشکار المپیک که باید در زندگی به کار گرفت</h2>
+              <span>تاریخ انتشار: ۲ خرداد ۱۳۹۸ </span>
+              <p>حالا ما چطور می‌توانیم از این عادت در زندگی و ورزش خود استفاده کنیم؟ از این عادت می‌توان فهمید که استراحت بسیار مهم است.</p>
+            </div>
+          </a>
+        </div>
+        <a class="redirect" href="/blog.html">بیشتر بخوانید</a>
       </div>
     </main>
     <footer>
@@ -153,7 +372,7 @@
               <a class="active" href="#">صفحه اصلی</a>
             </li>
             <li>
-              <a href="/">وبلاگ</a>
+              <a href="/blog.html">وبلاگ</a>
             </li>
             <li>
               <a href="/contact.html">ارتباط با ما</a>
@@ -213,6 +432,6 @@
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js?v=123123123"></script>
   </body>
 </html>

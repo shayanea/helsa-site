@@ -3,127 +3,282 @@
     width: 100%;
     text-align: center;
   }
+
   .banner .owl-carousel .owl-item .item {
     width: 85%;
   }
+
   .banner .owl-carousel a.col {
     margin: 0;
   }
+
   .banner .owl-carousel .redirect-btn {
     display: inline-block;
     margin: 0 auto;
     margin-top: 30px;
   }
+
   .banner .owl-carousel .item {
     flex-direction: column;
   }
+
   .banner .owl-carousel .col figure img {
     height: 300px;
   }
+
   .banner .owl-carousel .col:last-child {
     margin: 0;
   }
+
   .banner .owl-carousel .col .text {
     font-size: 1.8em;
   }
+
   .banner .owl-carousel .col .description {
     font-size: 14px;
   }
+
   main .blog {
     margin-top: 0;
   }
+
   .blog .container .col-sm {
     width: 100%;
   }
+
   .blog .container .row .item {
     margin-left: 0;
     margin-bottom: 25px;
     min-height: auto;
   }
+
   .img-responsive {
     width: 100%;
   }
+
   .blog .container .row {
     margin-bottom: 0;
   }
+
   .blog .container .row .full-height-item {
     height: auto;
   }
+
   .blog .container .full-height .sidebar {
     display: inline-block;
   }
+
   .blog .container .full-height .sidebar .item {
     margin-left: 0 !important;
+  }
+
+  header .container {
+    flex-direction: column-reverse;
+  }
+
+  .main-page .banner-container {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  header .container .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .main-page .banner-container .container {
+    flex-direction: column-reverse;
+  }
+
+  .main-page .banner-container .column h2 {
+    margin-top: 0;
+  }
+
+  .main-page .banner-container .column p {
+    margin-bottom: 25px;
+  }
+
+  .main-page .banner-container .column a,
+  .main-page .banner-container .column:last-child {
+    margin-left: 0;
+  }
+
+  .main-page .banner-container .column:last-child {
+    text-align: center;
+  }
+
+  .main-page .banner-container .column:last-child img {
+    margin: 50px auto 0 auto;
+    width: 100%;
+  }
+
+  .section-0 .row,
+  .section-2 .container,
+  .section-3 .container,
+  .section-4 .row,
+  .section-5 .row,
+  .section-6 .row {
+    flex-direction: column;
+  }
+
+  .section-0 .column,
+  .section-3 .column {
+    width: auto;
+  }
+
+  .section-0 .column:last-child {
+    margin-top: 25px;
+  }
+
+  .section-0 form .form-control,
+  .section-0 form .form-group {
+    width: 240px;
+  }
+
+  .section-0 form input.form-control {
+    width: calc(240px - 30px);
+  }
+
+  .section-0 form .form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+
+  .section-1 h2,
+  .section-2 h2 {
+    font-size: 25px;
+  }
+
+  .section-1 p,
+  .section-2 p {
+    font-size: 16px;
+  }
+
+  .section-1 .items {
+    flex: 1;
+  }
+
+  .section-2 {
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .section-2 img,
+  .section-3 img {
+    top: auto;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .section-3 {
+    margin: 0;
+  }
+
+  .section-4 .items,
+  .section-6 .items {
+    flex: 1;
+    margin: 0 0 25px 0;
+  }
+
+  .section-5 h2 {
+    font-size: 30px;
+  }
+
+  .section-5 a {
+    margin: 10px 0;
   }
 }
 
 @media(max-width: 375px) {
+
   .inner-page .container {
     width: 100%;
   }
+
   .loading-container span {
     font-size: 4em;
   }
+
   .banner .owl-carousel .col .text {
     font-size: 1.2em;
   }
+
   .banner .owl-carousel .col .description {
     font-size: 12px;
   }
+
   .blog .container .items .item {
     padding: 20px;
   }
+
   .blog .container .items h2 {
     font-size: 1em;
   }
+
   .blog .container .items .published-date {
     font-size: 12px;
   }
+
   .blog .container .items .description {
     display: none;
   }
+
   .inner-pager-header {
     height: auto;
     padding: 60px 10px;
   }
+
   .inner-pager-header .content {
     width: 100%;
   }
+
   .inner-pager-header h1 {
     font-size: 1.3em;
   }
+
   .single-post {
     margin-top: 0;
     width: auto;
     padding: 25px 10px;
   }
+
   .single-post p {
     text-align: justify;
     font-size: 14px;
   }
+
   .single-post p strong {
     font-size: 16px;
   }
+
   footer .menu-container {
     display: none;
   }
+
   .contactus form {
     width: 100%;
   }
+
   .contactus p {
     font-size: 16px;
   }
+
   .contactus form .form-control {
     min-width: auto;
   }
+
   .blog .container .row.full-height .col-sm .items:last-child .item {
     margin-left: 0;
   }
+
   .banner .owl-carousel .redirect-btn {
     display: inline-block;
     margin: 0 auto;
     margin-top: 20px;
   }
+
   .banner .owl-carousel .col {
     text-align: center;
   }
