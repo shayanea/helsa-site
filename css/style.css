@@ -381,10 +381,15 @@ header .logo-container .logo-text {
   border-radius: 20px;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 16px;
-  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
+}
+
+.main-page .banner-container .column:last-child a {
+  display: none;
 }
 
 .main-page .banner-container .column a:hover {
@@ -627,14 +632,19 @@ header .logo-container .logo-text {
   background-image: linear-gradient(20deg, #b53cff, #f952ff)
 }
 
+.blog .container .light-purple-post .item {
+  background-color: #D56CFC;
+  background-image: linear-gradient(20deg, #D56CFC, #FCBCA0)
+}
+
 .blog .container .green-post .item {
   background-color: #23bd38;
   background-image: linear-gradient(19deg, #23bd38, #41eba9)
 }
 
-.blog .container .pink-post .item {
-  background-color: #f857a5;
-  background-image: linear-gradient(20deg, #f857a5, #FF5858)
+.blog .container .light-pink-post .item {
+  background-color: #F78BA0;
+  background-image: linear-gradient(20deg, #F78BA0, #F8BCB4)
 }
 
 .blog .container .golden-post .item {
@@ -811,6 +821,10 @@ footer .container {
   flex-direction: row
 }
 
+footer .social-container {
+  text-align: center;
+}
+
 footer .menu-container ul li,
 footer .social-container ul li {
   display: inline-block
@@ -927,9 +941,19 @@ footer .social-container ul li a:hover svg path {
   background-image: linear-gradient(20deg, #b53cff, #f952ff)
 }
 
+.inner-pager-header.light-purple-post {
+  background-color: #D56CFC;
+  background-image: linear-gradient(20deg, #D56CFC, #FCBCA0)
+}
+
 .inner-pager-header.pink-post {
   background-color: #f857a5;
   background-image: linear-gradient(20deg, #f857a5, #FF5858)
+}
+
+.inner-pager-header.light-pink-post {
+  background-color: #F78BA0;
+  background-image: linear-gradient(20deg, #F78BA0, #F8BCB4)
 }
 
 .inner-pager-header.green-post {
@@ -1023,14 +1047,14 @@ footer .social-container ul li a:hover svg path {
 }
 
 .not-found h1 {
-  color: #fff;
+  color: #222;
   font-size: 6em;
   padding: 0;
   margin: 0
 }
 
 .not-found h5 {
-  color: #fff
+  color: #222
 }
 
 .not-found a {
@@ -1577,7 +1601,7 @@ footer .social-container ul li a:hover svg path {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -1588,16 +1612,27 @@ footer .social-container ul li a:hover svg path {
 .section-4 .items h3 {
   color: #49a2fb;
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .section-4 .items h2 {
   color: #49a2fb;
   font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.section-4 .items h5 {
+  color: #81c0ff;
+  font-size: 16px;
 }
 
 .section-4 .items.special h3,
 .section-4 .items.special h2 {
   color: #fff;
+}
+
+.section-4 .items.special h5 {
+  color: #eee;
 }
 
 .section-4 .items .body {
@@ -1636,28 +1671,53 @@ footer .social-container ul li a:hover svg path {
   margin-bottom: 30px;
 }
 
+.section-5 .container {
+  text-align: center;
+}
+
 .section-5 .row {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.section-5 h4 {
+  font-family: IranSansBold;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .section-5 a {
+  position: relative;
   display: block;
   height: 55px;
   width: 180px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 10px;
+  margin: 10px 0;
 }
 
-.section-5 a.ios {
-  background-image: url("../images/download_ios.png");
+.section-5 a.direct_download {
+  background-image: url("../images/buttons/android.png");
 }
 
-.section-5 a.android {
-  background-image: url("../images/downaload_android.png");
+.section-5 a.anardoni {
+  background-image: url("../images/buttons/anardoni.png");
+}
+
+.section-5 a.playstore {
+  background-image: url("../images/buttons/google-play-badge.png");
+}
+
+.section-5 .sibapp {
+  background-image: url("../images/buttons/sibapp.png");
+}
+
+.section-5 .iapps {
+  background-image: url("https://developer.iapps.ir/images/Iapps-Badge-Black.svg")
 }
 
 .section-6 {
